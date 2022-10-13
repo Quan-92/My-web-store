@@ -19,8 +19,9 @@ const Layout = () => {
                             <Routes/>
                         </div>
                     </div>
-                    <Footer/>
                     <ProductViewModal/>
+                    <Footer/>
+                    
                 </div>
             )}/>
         </BrowserRouter>

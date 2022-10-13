@@ -47,7 +47,7 @@
         height: 100%;
         font-size: 1.5rem;
 
-        &__item ~ &__item {
+        &__item~&__item {
             margin-left: 39px;
 
             @include tablet {
@@ -68,7 +68,8 @@
             color: $main-color;
         }
 
-        &__left, &__right {
+        &__left,
+        &__right {
             @include flex(center, center);
             height: 100%;
         }
@@ -77,10 +78,46 @@
             font-size: 2.25rem;
 
             &__item {
+                border-radius: 2rem;
+                border: 3px solid rgb(212, 208, 208);
+                width: 3.2rem;
+                height: 3.2rem;
                 @include flex(center, center);
 
                 @include tablet {
                     margin-left: 10px;
+                }
+            }
+
+            &__search {
+                margin-left: 20rem;
+                @include flex(center, center);
+               
+                #search-box {
+                    #search-text {
+                        border: none;
+                        outline: none;
+                        background: rgb(113, 189, 208);
+                        width: 0;
+                        font-size: 1.25rem;
+                        border-radius: 2rem 0 2rem 2rem ;
+                        border: 3px solid rgb(128, 158, 226);
+                        color: rgb(11, 95, 95);
+                        transition: 1s ease-in-out;
+                        margin-right: -18px;
+                    }
+                    #search-btn {
+                        border-radius: 2rem;
+                        border: 3px solid rgb(212, 208, 208);
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        font-size: 2.25rem;
+                    }
+                }
+                #search-box:hover #search-text,
+                #search-box #search-text:valid {
+                    width: 20rem;
+                    padding: 1rem;
                 }
             }
 
@@ -111,7 +148,7 @@
                     transform: translateX(0);
                 }
 
-                &__item ~ &__item {
+                &__item~&__item {
                     margin-left: unset;
                     margin-top: 20px;
                 }
