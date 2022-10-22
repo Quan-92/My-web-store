@@ -82,7 +82,7 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <div className="header__menu__item header__menu__right__search">
+          {/* <div className="header__menu__item header__menu__right__search">
             <div id="search-box">
               <input
               type="text"
@@ -93,7 +93,7 @@ const Header = () => {
                 <i className="bx bx-search"></i>
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="header__menu__right">
             <div className="header__menu__item header__menu__right__item">
               <Link to="/cart">
