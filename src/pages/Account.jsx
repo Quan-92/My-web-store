@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from '../components/Helmet';
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/loginform/LoginForm';
 
 
 function Account() {
