@@ -82,18 +82,6 @@ const Header = () => {
               </div>
             ))}
           </div>
-          {/* <div className="header__menu__item header__menu__right__search">
-            <div id="search-box">
-              <input
-              type="text"
-              id="search-text"
-              placeholder="Search QTStore or type a URL"
-              required/>
-              <button id="search-btn">
-                <i className="bx bx-search"></i>
-              </button>
-            </div>
-          </div> */}
           <div className="header__menu__right">
             <div className="header__menu__item header__menu__right__item">
               <Link to="/cart">

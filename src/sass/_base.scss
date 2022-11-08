@@ -70,8 +70,8 @@ img {
 .container {
     width: 100%;
     max-width: 1620px;
-    padding: 0 50px;
     margin: auto;
+
 
     @include tablet {
         padding: 0 20px;
@@ -84,7 +84,6 @@ img {
 
 .main {
     margin-top: $header-height;
-    margin-bottom: 2rem;
     min-height: 100vh;
 
     @include tablet {

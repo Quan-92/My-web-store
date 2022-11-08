@@ -16,14 +16,14 @@ import banner from '../assets/images/banner.png'
 
 const Home = () => {
   return (
-    <Helmet title="Home">
+    <Helmet title="Home" >
       <HeroSlider
         data={heroSliderData}
         control={true}
         auto={false}
         timeOut={5000} />
 
-      <Section>
+      <Section >
         <SectionBody>
           <Grid
             col={4}

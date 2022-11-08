@@ -1,79 +1,97 @@
 .catalog {
-    @include flex(flex-start, flex-start);
+  background-image: url(https://img.freepik.com/free-photo/close-up-detail-cozy-clothing-texture_23-2149409203.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  @include flex(flex-start, flex-start);
+
+  @include tablet {
+    flex-direction: column;
+  }
+  padding: 20px 50px 20px 50px;
+  &__filter {
+    width: 20%;
+    padding: 2rem 0 0 4rem;
+    background-color: #c0b29e9d;
+    border-top: 3px solid #eae9e5;
+    border-left: 3px solid #eae9e5;
+    border-bottom: 3px solid #eae9e5;
+    border-radius: 3rem 0 0 3rem;
 
     @include tablet {
-        flex-direction: column;
+      width: max-content;
+      height: 100vh;
+      background-color: $main-bg;
+      padding: 1rem;
+      position: fixed;
+      left: 0;
+      top: $header-tablet-height;
+      z-index: 100;
+      box-shadow: $box-shadow;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
     }
 
-    &__filter {
-        width: 20%;
-
-        @include tablet {
-            width: max-content;
-            height: 100vh;
-            background-color: $main-bg;
-            padding: 1rem;
-            position: fixed;
-            left: 0;
-            top: $header-tablet-height;
-            z-index: 100;
-            box-shadow: $box-shadow;
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-        }
-
-        @include mobile {
-            top: $header-mobile-height;
-        }
-
-        &.active {
-            transform: translateX(0);
-        }
-
-        &__widget {
-            margin-bottom: 2rem;
-
-            &__title {
-                font-size: 1.25rem;
-                font-weight: 600;
-                text-transform: capitalize;
-                margin-bottom: 16px;
-            }
-
-            &__content {
-                color: $txt-second-color;
-
-                &__item {
-                    margin-bottom: 13px;
-                }
-            }
-        }
-
-        &__close {
-            display: none;
-
-            @include tablet {
-                display: block;
-                font-size: 2rem;
-                margin-bottom: 1rem;
-            }
-        }
+    @include mobile {
+      top: $header-mobile-height;
     }
 
-    &__content {
-        flex-grow: 1;
-
-        @include tablet {
-            width: 100%;
-        }
+    &.active {
+      transform: translateX(0);
     }
 
-    &__filter__toggle {
-        display: none;
+    &__widget {
+      margin-bottom: 2rem;
 
-        @include tablet {
-            display: block;
-            margin-bottom: 2rem;
+      &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-shadow: $txt-shadow;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+      }
+
+      &__content {
+        color: $txt-second-color;
+        font-weight: 600;
+        text-shadow: $txt-shadow;
+        &__item {
+          margin-bottom: 13px;
         }
+      }
     }
+
+    &__close {
+      display: none;
+
+      @include tablet {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding-top: 10px;
+    background-color: #c4b6a6ac;
+    border: 3px solid #eae9e5;
+    border-radius: 0 2rem 2rem 2rem;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__filter__toggle {
+    display: none;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
 }

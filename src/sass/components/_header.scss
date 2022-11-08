@@ -1,5 +1,5 @@
 .header {
-    background-color: $main-bg;
+    background-image: url('https://img.freepik.com/free-vector/yogurt-cream-silk-texture-illustration-3d-liquid-white-paint-wavy-flow-pattern_33099-608.jpg?w=1880&t=st=1667730211~exp=1667730811~hmac=780a3fccdeb8d22f1025d92e9587e88c9a89749fe08d35a871aac9eb5b3da8d3');
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +19,7 @@
 
     .container {
         height: 100%;
+        padding: 0 50px;
     }
 
     &.shrink {
@@ -86,38 +87,6 @@
 
                 @include tablet {
                     margin-left: 10px;
-                }
-            }
-
-            &__search {
-                margin-left: 20rem;
-                @include flex(center, center);
-               
-                #search-box {
-                    #search-text {
-                        border: none;
-                        outline: none;
-                        background: rgb(113, 189, 208);
-                        width: 0;
-                        font-size: 1.25rem;
-                        border-radius: 2rem 0 2rem 2rem ;
-                        border: 3px solid rgb(128, 158, 226);
-                        color: rgb(11, 95, 95);
-                        transition: 1s ease-in-out;
-                        margin-right: -18px;
-                    }
-                    #search-btn {
-                        border-radius: 2rem;
-                        border: 3px solid rgb(212, 208, 208);
-                        width: 3.2rem;
-                        height: 3.2rem;
-                        font-size: 2.25rem;
-                    }
-                }
-                #search-box:hover #search-text,
-                #search-box #search-text:valid {
-                    width: 20rem;
-                    padding: 1rem;
                 }
             }
 

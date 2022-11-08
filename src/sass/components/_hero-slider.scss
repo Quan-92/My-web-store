@@ -3,8 +3,11 @@
     max-height: 1080px;
     overflow: hidden;
     position: relative;
-    margin-bottom: 50px;
     margin-top: calc(#{$header-height} * -1);
+    background-image: url(https://img.freepik.com/free-photo/wardrobe-with-clothes-hangers_23-2149190378.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1em 1em 1em rgb(44, 43, 43);
 
     @include tablet {
         margin-top: calc(#{$header-tablet-height} * -1);
@@ -37,6 +40,7 @@
             opacity: 1;
             visibility: visible;
             pointer-events: visible;
+            padding: 0 50px;
         }
 
         &__info {
@@ -61,17 +65,21 @@
                 font-weight: 600;
                 font-size: 4rem;
                 line-height: 6.75rem;
+                text-shadow: 0.03em 0.03em 0.1em rgb(255, 255, 255);
                 overflow: hidden;
 
                 @include mobile {
                     font-size: 2.5rem;
                     line-height: 3.75rem;
+                    text-shadow: 0.05em 0.05em 0.1em rgb(255, 255, 255);
                 }
             }
 
             &__description {
                 color: $txt-second-color;
                 font-size: 1.5rem;
+                font-weight: 700;
+                text-shadow: 0.05em 0.05em 0.1em rgb(255, 255, 255);
                 line-height: 2.25rem;
                 overflow: hidden;
 
@@ -176,7 +184,7 @@
 
         &__item {
             @include flex(center, center);
-            font-size: 2rem;
+            font-size: 4rem;
             cursor: pointer;
 
             &:hover {
@@ -184,7 +192,7 @@
             }
 
             .index {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
