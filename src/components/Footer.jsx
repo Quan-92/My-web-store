@@ -74,7 +74,7 @@ const Footer = () => {
 
           <div>
             <div className='footer__title'>
-              About YOLO
+              About QT STORE
             </div>
 
             <div className="footer__content">
@@ -116,7 +116,7 @@ const Footer = () => {
             <p>
               Towards the goal of bringing
               a new joy of dressing every day to millions
-              of Vietnamese consumers. Join Yolo towards
+              of Vietnamese consumers. Join QT STORE towards
               a more active and positive life.
             </p>
           </div>
